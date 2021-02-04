@@ -1,0 +1,64 @@
+/* CSS-KodeFelld fur Websete. Andrey Shtarev 13.04.2019  */
+
+pre .str, code .str { color: #8FBC8F; } /* string */
+pre .kwd, code .kwd { color: #A268DF; } /* keyword */
+pre .com, code .com { color: #7E7E7E; }/* comment*/
+pre .typ, code .typ { color: #6ecbcc; } /* type */
+pre .lit, code .lit { color: #D95B5B; } /* literal */
+pre .pun, code .pun { color: #DCDCDC;  } /* punctuation */
+pre .pln, code .pln { color: #DBC4A8; } /* plaintext */
+pre .tag, code .tag { color: #1E83C4; } /* html/xml tag */
+pre .htm, code .htm { color: #dda0dd; } /* html tag */
+pre .xsl, code .xsl { color: #d0a0d0; } /* xslt tag */
+pre .atn, code .atn { color: #4CAF50; font-weight: normal;} /* html/xml attribute name  */
+pre .atv, code .atv { color: #E89336; } /* html/xml attribute value */
+pre .dec, code .dec { color: #808080; } /* decimal */
+
+a {
+  text-decoration: none;
+}
+pre.prettyprint, code.prettyprint {
+  font-family:'Courier New';
+  /*font-weight: bold;*/
+  font-size: 9pt;
+  background-color: #0f0f0f;/* цвет фона */
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+pre.prettyprint {
+  width: 95%;
+  margin: 1em auto;
+  padding: 1em;
+  white-space: pre-wrap;
+}
+
+pre.prettyprint a, code.prettyprint a {
+   text-decoration:none;
+}
+/* Specify class=linenums on a pre to get line numbering; line numbers themselves are the same color as punctuation */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #8B8970; } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+/* прописал темный фон и !important; для нечетных li так как они были как зебра белые*/
+li.L1,li.L3,li.L5,li.L7,li.L9 {background-color: #1e1e1e !important;}
+
+/* print is mostly unchanged from default at present  */
+@media print {
+  pre.prettyprint, code.prettyprint { background-color: #fff;  }
+  pre .str, code .str { color: #088; }
+  pre .kwd, code .kwd { color: #006; font-weight: bold; }
+  pre .com, code .com { color: #436228; font-style: italic; }
+  pre .typ, code .typ { color: #404; font-weight: bold; }
+  pre .lit, code .lit { color: #044; }
+  pre .pun, code .pun { color: #440; }
+  pre .pln, code .pln { color: #000; }
+  pre .tag, code .tag { color: #b66ff7; font-weight: bold; }
+  pre .htm, code .htm { color: #606; font-weight: bold; }
+  pre .xsl, code .xsl { color: #606; font-weight: bold; }
+  pre .atn, code .atn { color: #c71585;  font-weight: normal; }
+  pre .atv, code .atv { color: #088;  font-weight: normal; }
+}
