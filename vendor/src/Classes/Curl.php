@@ -53,7 +53,7 @@ class Curl
         $ch = curl_init();  
         //Устанавливаем адрес для подключения    
         curl_setopt($ch, CURLOPT_URL, Request::root().'curl?view='.$view.'&data='.serialize($data));
-        //Говорим, что нам необходим результат, без этой строки следущая команда выведет страницу shtarev.com на экран  
+        //Говорим, что нам необходим результат, без этой строки следущая команда выведет страницу 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);  
         // выдача результата  
         $result = curl_exec($ch); 
