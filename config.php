@@ -1,9 +1,8 @@
 <?php
 session_start();
  
-use vendor\src\Classes\Request;
-
-require 'vendor\src\func\autoload.php';
+require 'vendor/src/Classes/Request.php';
+require 'vendor/src/func/autoload.php';
 
 // данные для подключения к базе
 class Config
